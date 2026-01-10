@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.navbar{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-ps{
+    display: flex;
+    gap: 20px;
+}
+.header-btn{
+    padding: 10px 30px;
+    background-color: #061B3A;
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    color: white;
+    cursor: pointer;
+}
+.fa-bars{
+    display: none;
+}
+.section1-blue{
+    background-color: #A7CBFF;
+}
+.section1{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left h1{
+    font-size: 50px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.left-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
+}
+.left button{
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.right{
+    position: relative;
+    height: 700px;
+}
+.hero-section-human{
+    height: 100%;
+}
+.card{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    position: absolute;
+    top: 60%;
+}
+.card div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+}
+.card p{
+    font-size: 12px;
+}
+.right button{
+    background-color: #071C3B;
+    color: white;
+    font-size: 20px;
+    border-radius: 40px;
+    padding: 10px 30px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+}
+@media (max-width: 600px){
+    .header-ps, .header-btn{
+        display: none;
+    }
+    .fa-bars
+    {
+        display: block;
+    }
+    .section1{
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+    }
+    .right button{
+        left: 25%;
+    }
+}
