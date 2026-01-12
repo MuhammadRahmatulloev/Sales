@@ -98,6 +98,7 @@
     border-radius: 40px;
     padding: 10px 30px;
     position: absolute;
+    cursor: pointer;
     top: 80%;
     left: 50%;
 }
@@ -111,8 +112,8 @@
 }
 .process-cont{
     display: grid;
-    grid-template-columns: 220px 200px 200px 200px 200px;
-    grid-template-rows: 200px 180px 180px 180px 180px;
+    grid-template-columns: 220px 220px 220px 220px 220px;
+    grid-template-rows: 200px 200px;
     gap: 20px;
 }
 .item{
@@ -130,6 +131,62 @@
 }
 .process h1{
     font-size: 40px;
+}
+.sami{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 50px;
+}
+.sami-cont{
+    display: grid;
+    grid-template-columns: 600px 600px;
+    grid-template-rows: 400px;
+    gap: 20px;
+}
+.item-sami1{
+    border-radius: 20px;
+    box-shadow: 0px 0px 7px rgba(192, 192, 192, 0.634);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 40px;
+}
+.item-sami2{
+    height: 350px;
+    background-color: #061B3A;
+    border-radius: 20px;
+    box-shadow: 0px 0px 7px rgba(192, 192, 192, 0.634);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 40px;
+}
+.sami h1{
+    font-size: 40px;
+}
+.item-sami1 h2{
+    font-size: 24px;
+    color: #00000066;
+}
+.item-sami1 p{
+    font-size: 24px;
+    font-weight: 300;
+    color: #00000089;
+}
+.sami-both{
+    display: flex;
+    gap: 20px;
+    color: rgba(255, 255, 255, 0.844);
+    font-weight: 400;
+    font-size: 20px;
+}
+.item-sami2 h2{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
 }
 @media (max-width: 600px){
     .header-ps, .header-btn{
@@ -155,5 +212,42 @@
         grid-template-columns: 1fr;
         grid-template-rows: repeat(10, 200px);
         gap: 20px;
+    }
+    .sami{
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        gap: 50px;
+        margin-top: 50px;
+    }
+    .sami-cont{
+        display: grid;
+        grid-template-columns: 370px;
+        grid-template-rows: repeat(2, 400px);
+        gap: 20px;
+    }
+    .item-sami1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-left: 20px;
+    }
+    .item-sami2{
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-left: 20px;
+    }
+    .sami h1{
+        font-size: 35px;
+    }
+    .item-sami1 h2{
+        font-size: 20px;
+    }
+    .item-sami1 p{
+        font-size: 20px;
     }
 }
